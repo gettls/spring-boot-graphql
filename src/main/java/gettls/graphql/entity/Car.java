@@ -1,6 +1,5 @@
 package gettls.graphql.entity;
 
-
 import lombok.*;
 
 import javax.persistence.Entity;
@@ -13,12 +12,12 @@ import javax.persistence.Id;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class Member {
+public class Car {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private int age;
+    private int memberId;
 
 }
