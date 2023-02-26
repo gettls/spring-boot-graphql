@@ -14,6 +14,7 @@ type Car{
 type Query{
     getMember(id: ID!): Member
     getMembers: [Member]
+    exception: Boolean!
 }
 
 type Mutation{
